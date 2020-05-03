@@ -1,0 +1,84 @@
+nav {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: #1b242f;
+  border-bottom: 3px solid #04c2c9;
+  height: 50px;
+  text-align: left;
+  width: 100%;
+  z-index: 99;
+  color: #ffffff;
+}
+nav.fixed {
+  bottom: inherit;
+  left: 0;
+  position: fixed;
+  top: 0;
+}
+nav.fixed.desk {
+  animation: popDown 0.5s;
+}
+nav .linkWrap {
+  background: #333;
+  height: 0;
+  max-width: 1200px;
+  overflow: hidden;
+  position: absolute;
+  top: 53px;
+  transition: height 0.3s ease-out;
+  width: 100%;
+}
+nav .linkWrap.visible {
+  height: 220px;
+}
+nav .linkWrap div {
+  cursor: pointer;
+  font-size: 12pt;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  transition: color 0.5s;
+}
+nav .linkWrap div:first-child {
+  padding: 25px 20px 12px 20px;
+}
+nav .linkWrap div:hover {
+  color: #e31b6d;
+}
+nav .linkWrap {
+  background: none;
+  height: initial;
+  overflow: visible;
+  position: initial;
+  text-align: left;
+  padding: 20px;
+}
+nav .linkWrap .visible {
+  height: initial;
+}
+nav .linkWrap div {
+  display: inline;
+  font-size: initial;
+  margin: 0 20px;
+  padding: initial;
+}
+nav .linkWrap div:first-child {
+  padding: 0;
+}
+nav .mdi-menu {
+  display: none;
+}
+nav .mdi-menu {
+  font-size: 30pt;
+  line-height: 36pt;
+  margin: auto 0;
+  position: absolute;
+  right: 5vw;
+  top: 0;
+}
+nav .active {
+  color: #e31b6d;
+}
+.pageLink {
+  cursor: pointer;
+}
